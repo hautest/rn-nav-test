@@ -1,5 +1,5 @@
 {
-  "name": "rnnavtest",
+  "name": "rn-nav-test",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,8 +10,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-navigation/elements": "^2.2.5",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/native-stack": "^7.2.0",
     "react": "18.3.1",
-    "react-native": "0.76.6"
+    "react-native": "0.76.6",
+    "react-native-safe-area-context": "^5.1.0",
+    "react-native-screens": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -35,5 +40,6 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "pnpm@8.15.5+sha512.b051a32c7e695833b84926d3b29b8cca57254b589f0649d899c6e9d0edb670b91ec7e2a43459bae73759bb5ce619c3266f116bf931ce22d1ef1759a7e45aa96f"
 }

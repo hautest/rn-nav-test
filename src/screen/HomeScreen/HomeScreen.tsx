@@ -1,9 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { useMainNavigator } from '../../navigators/RootStack/RootStack'
 
 export function HomeScreen() {
+  const navigation = useMainNavigator()
+
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Pressable onPress={() => navigation.navigate('Detail')}>
+        <Text>Go to Detail</Text>
+      </Pressable>
     </View>
   )
 }
